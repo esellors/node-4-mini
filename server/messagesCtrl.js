@@ -1,7 +1,8 @@
 let allMessages = [];
 
 module.exports = {
-   getAllMessages: (req, res) => {
+    getAllMessages: (req, res) => {
+      console.log(req.session)
       res.status(200).json(allMessages);
    },
    createMessage: (req, res) => {
